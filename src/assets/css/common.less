@@ -1,0 +1,186 @@
+.disMid{
+  display: inline-block;
+  vertical-align: middle;
+}
+.txtl{
+  text-align: left;
+}
+.txtc{
+  text-align: center;
+}
+.txtr{
+  text-align: right;
+}
+.clear{
+  clear: both;
+}
+
+//24px
+@fs24: 24px;
+.fs24{
+  font-size: 24px !important;
+}
+
+//16px
+@fs16: 16px;
+.fs16{
+  font-size: 16px !important;
+}
+
+//14px
+@fs14: 14px;
+.fs14{
+  font-size: 14px !important;
+}
+
+//13px
+@fs13: 13px;
+.fs13{
+  font-size: 13px !important;
+}
+
+//12px
+@fs12: 12px;
+.fs12{
+  font-size: 12px !important;
+}
+
+//12px
+@fs10: 10px;
+.fs10{
+  font-size: 10px !important;
+}
+
+//颜色4196f8
+@color4196f8: #4196f8;
+
+//蓝色字体
+.text-blue{
+  color: @color4196f8 !important;
+}
+
+//颜色999
+@color999: #999;
+
+//灰色字体
+.text-gray{
+  color: @color999 !important;
+}
+
+//margin
+.margin(@mt:5px,@mr:5px,@mb:5px,@ml:5px){
+  margin: @mt @mr @mb @ml;
+}
+
+
+//padding
+
+.padding(@pt:5px,@pr:5px,@pb:5px,@pl:5px){
+  padding: @pt @pr @pb @pl;
+}
+
+//flex
+  .disflex{
+    display: -webkit-box ;
+    display: -webkit-flex ;
+    display: -ms-flexbox ;
+    display: flex ;
+  }
+.flex(@flex: 10%){
+  -webkit-box-flex: @flex;
+  -webkit-flex: 0 0 @flex;
+  -moz-box-flex: @flex;
+  -moz-flex: 0 0 @flex;
+  -ms-flex: 0 0 @flex;
+  flex: 0 0 @flex;
+  max-width: @flex;
+  width: @flex;
+}
+
+//垂直居中
+  .disMid{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+//圆角边框
+  .rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+//清除浮动
+.fl{
+    float: left;
+  }
+.fr{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+
+//定位
+.positionR{
+  position: relative !important;
+}
+
+//暂无数据
+.noLoad{
+  margin: 15px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+//禁止复制
+  .no-copy{
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+  }
+
+//超出省略号
+  .overHid{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+
+.page-body{
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+//vuex样式重置
+.vux-header{
+  background-color: #fff !important;
+  .vux-header-title{
+    color: black !important;
+  }
+  .vux-header-left{
+    .left-arrow:before{
+      border-left: 1px solid black !important;
+      border-top: 1px solid black !important;
+    }
+  }
+}
+.vux-x-input{
+  background: white;
+}
+.weui-btn{
+  .fs14;
+  height: 50px;
+  line-height: 50px;
+}
+.weui-btn_primary{
+  background-color: #ffd330 !important;
+}
